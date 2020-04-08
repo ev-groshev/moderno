@@ -225,6 +225,7 @@
 		display: flex;
 		align-items: center;
 
+
 		.avatar {
 			width: 30px;
 			height: 30px;
@@ -239,8 +240,19 @@
 		span {
 			font-weight: 500;
 			font-size: 14px;
+			max-width: 230px;
 		}
 
+	}
+
+	&-star {
+		color: #b0bec5;
+
+		span {
+			font-size: 12px;
+			color: #000;
+
+		}
 	}
 }
 
@@ -256,5 +268,39 @@
 		font-size: 16px;
 		color: $bg;
 		cursor: pointer;
+	}
+}
+
+//products-slider start
+.products-slider {
+	padding: 120px 0 110px;
+
+	.slick-dots {
+		text-align: center;
+		margin-top: 50px;
+
+		li {
+			display: inline-block;
+			margin-left: 3px;
+			margin-right: 3px;
+
+			&.slick-active {
+				button {
+					background-color: $green;
+				}
+			}
+
+
+			button {
+				border: none;
+				background-color: #e8e8e8;
+				border-radius: 50%;
+				font-size: 0;
+				width: 16px;
+				height: 16px;
+				cursor: pointer;
+				outline: none;
+			}
+		}
 	}
 }
