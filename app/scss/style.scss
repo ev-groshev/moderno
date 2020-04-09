@@ -444,3 +444,194 @@
 		}
 	}
 }
+
+.footer {
+	background-color: $bg;
+
+	&__content-inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 115px 0 100px;
+	}
+
+	&__col {
+		max-width: 270px;
+		width: 100%;
+
+		&-title {
+			font-family: 'Raleway', sans-serif;
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 24px;
+			color: #fff;
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+			position: relative;
+
+			&::after {
+				position: absolute;
+				content: '';
+				left: 0;
+				bottom: 0;
+				background-color: $green;
+				width: 51px;
+				height: 3px;
+			}
+		}
+
+		&-text {
+			font-size: 15px;
+			color: $text;
+			margin-bottom: 30px;
+		}
+
+		&-list {
+			a {
+				margin-top: 15px;
+				color: #b7c3c8;
+				padding-left: 21px;
+				position: relative;
+
+				&::before {
+					position: absolute;
+					content: "\f105";
+					left: 0;
+					font-family: "icomoon";
+					color: $green;
+					font-size: 18px;
+				}
+			}
+
+		}
+
+	}
+
+	&__menu {
+		max-width: 220px;
+	}
+
+	&__copy {
+		border-top: 1px solid #424d53;
+
+		&-text {
+			font-size: 15px;
+			font-weight: 400;
+			color: #919699;
+			text-align: center;
+			padding: 25px 0;
+		}
+	}
+
+	&__info {
+		margin-top: 18px;
+		color: #fff;
+		padding-left: 30px;
+		position: relative;
+
+		&::before {
+			content: "\f041";
+			font-family: "icomoon";
+			color: $green;
+			font-size: 18px;
+			position: absolute;
+			left: 0;
+		}
+
+		&-phone {
+			&::before {
+				content: "\f095";
+			}
+		}
+	}
+
+
+
+}
+
+
+
+.footer__social-link {
+	margin-bottom: 33px;
+
+	li {
+		display: inline-block;
+
+		&+li {
+			margin-left: 7px;
+		}
+	}
+
+	a {
+		width: 28px;
+		height: 28px;
+		background-image: url("../images/social/css_sprites.png");
+	}
+}
+
+link-facebook {
+	background-position: 0 0;
+}
+
+.link-twitter {
+	background-position: -28px -28px;
+}
+
+.link-youtube {
+	background-position: -56px -0;
+}
+
+.link-pintrest {
+	background-position: -0 -28px;
+}
+
+.link-in {
+	background-position: -28px -0;
+}
+
+.footer__form {
+	position: relative;
+
+	&-title {
+		font-size: 20px;
+		color: #fff;
+		margin-bottom: 18px;
+	}
+
+	input {
+		border: none;
+		width: 100%;
+		display: block;
+		background-color: #2f3c43;
+		height: 40px;
+		color: #fff;
+		font-size: 14px;
+		padding-left: 13px;
+		padding-right: 50px;
+
+		&::placeholder {
+			color: #697378;
+		}
+	}
+
+	button {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: 40px;
+		width: 43px;
+		background-color: $green;
+		border: none;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&::before {
+			position: absolute;
+			content: "\f124";
+			color: #fff;
+			font-family: "icomoon";
+			font-size: 20px;
+		}
+	}
+}
