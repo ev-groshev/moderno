@@ -9,6 +9,26 @@ html {
 	box-sizing: inherit;
 }
 
+
+html,
+body {
+	height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
 body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
@@ -41,6 +61,9 @@ li {
 	padding: 0 30px;
 }
 
+.page-content {
+	background-color: $grey;
+}
 
 @media (max-width: 760px) {
 	.container-fluid {
@@ -61,3 +84,45 @@ li {
 	display: inline-block;
 	margin-right: 13px;
 }
+
+//хлебные крошки
+.breadcrumbs {
+	&__inner {
+		padding: 45px 0 40px;
+	}
+
+	&__list {
+		li {
+			display: inline-block;
+			position: relative;
+
+
+			&+li {
+				margin-left: 24px;
+
+				&::after {
+					position: absolute;
+					left: -15px;
+					content: "-";
+					color: $green;
+
+				}
+			}
+
+			a {
+
+				color: #b0bec5;
+			}
+
+			&:last-child {
+
+				a,
+				span {
+					color: $bg;
+				}
+			}
+		}
+	}
+}
+
+//---------------------
