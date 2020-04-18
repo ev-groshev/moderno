@@ -123,6 +123,8 @@
 }
 
 .basket {
+	margin-right: 20px;
+
 	span {
 		background-color: $green;
 	}
@@ -130,7 +132,7 @@
 
 
 .user {
-	margin-left: 20px;
+
 	margin-right: 25px;
 	padding-right: 20px;
 	position: relative;
@@ -237,6 +239,7 @@
 	height: 0;
 	overflow: hidden;
 	transition: all .3s;
+	z-index: 1;
 }
 
 .basket__box,
@@ -370,6 +373,10 @@
 
 .icons-color::before {
 	color: $tomato;
+}
+
+.header__btn-menu {
+	display: none;
 }
 
 /* старт search */
@@ -1363,3 +1370,13 @@ button.icon-unsorted {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+@import "media";
