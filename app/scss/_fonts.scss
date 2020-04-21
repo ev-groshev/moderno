@@ -47,6 +47,14 @@
 }
 
 @font-face {
+	font-family: 'Open Sans', sans-serif;
+	src: url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+		url('../fonts/OpenSans-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'icomoon';
 	src: url('../fonts/icomoon.eot?u2xpqg');
 	src: url('../fonts/icomoon.eot?u2xpqg#iefix') format('embedded-opentype'),
