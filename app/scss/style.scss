@@ -379,6 +379,118 @@
 	display: none;
 }
 
+
+
+/* МОДАЛЬНОЕ ОКНО  FANCYBOX*/
+#modal {
+	background-color: $green;
+	max-width: 730px;
+	width: 100%;
+	padding-top: 90px;
+	padding-bottom: 100px;
+}
+
+.login__title {
+	text-align: center;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 36px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.login__wrapper {
+	form {
+		max-width: 400px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	label {
+		position: relative;
+		display: block;
+		width: 100%;
+
+		&::before {
+			position: absolute;
+			font-family: 'icomoon';
+			font-size: 14px;
+			color: #fff;
+			left: 18px;
+			top: 9px;
+		}
+	}
+
+	.login__label-name::before {
+		content: "\f007";
+	}
+
+	.login__label-pass::before {
+		content: "\f023";
+	}
+
+	input {
+		height: 43px;
+		margin-bottom: 8px;
+		border: none;
+		background-color: #76ae36;
+		color: #fff;
+		padding-left: 40px;
+		display: block;
+		width: 100%;
+
+		&::placeholder {
+			color: #fff;
+			font-size: 14px;
+		}
+	}
+
+	button {
+		margin-top: 19px;
+		padding: 18px 0 16px;
+		background-color: #fff;
+		width: 140px;
+		text-transform: uppercase;
+		border: none;
+		margin-right: 10px;
+		font-weight: 700;
+		color: #000;
+		box-shadow: 1px 2px 2px 0px rgba(117, 173, 53, 0.75);
+	}
+
+	.creat-acc {
+		margin-top: 17px;
+		padding: 15px 0 14px 25px;
+		width: 245px;
+		text-align: center;
+		background-color: #76ae36;
+		color: #fff;
+		font-size: 18px;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: "\f044";
+			font-family: "icomoon";
+			left: 36px;
+		}
+	}
+
+	.lost-pass {
+		display: block;
+		margin-top: 23px;
+		color: #fff;
+		font-size: 18px;
+	}
+
+	.fancybox-button svg path {
+		color: #fff;
+	}
+}
+
+/* end fancybox */
+
 /* старт search */
 .search {
 
