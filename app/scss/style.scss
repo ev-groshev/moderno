@@ -2621,6 +2621,144 @@ button.icon-unsorted {
 	}
 }
 
+//start withdrawals
+.withdrawals__inner {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 110px;
+}
 
+.withdrawals__col {
+	max-width: 570px;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	border: 1px solid #dedede;
+}
+
+
+.withdrawals__title {
+	padding: 18px 32px 24px;
+	font-size: 24px;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+	border-bottom: 1px solid #dedede;
+	color: $bg;
+	margin-bottom: 30px;
+}
+
+.withdrawals__content {
+	padding-left: 35px;
+	padding-right: 40px;
+
+	button {
+		margin-top: 13px;
+		margin-bottom: 50px;
+		color: #fff;
+		background-color: $green;
+		border: none;
+		padding: 15px 36px;
+		cursor: pointer;
+	}
+}
+
+.withdrawal__line-form {
+	margin-bottom: 25px;
+
+	label {
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		color: $bg;
+		font-weight: 500;
+		font-family: "Roboto",
+			sans-serif;
+		margin-bottom: 15px;
+
+		span {
+			color: $green;
+			font-size: 24px;
+		}
+	}
+
+	input,
+	select {
+		width: 100%;
+		display: block;
+		border: 1px solid #d7d7d7;
+		height: 40px;
+		background-color: #f9f9f9;
+		padding: 0 18px;
+	}
+
+	.jq-selectbox {
+		width: 100%;
+	}
+
+	.jq-selectbox__select {
+		height: 40px;
+		padding: 0 18px;
+		border: 1px solid #d7d7d7;
+		border-bottom-color: #d7d7d7;
+		border-radius: 0;
+		background: #f9f9f9;
+		box-shadow: none;
+		color: #707070;
+		text-shadow: none;
+		font-family: "Roboto", sans-serif;
+		font-size: 15px;
+		line-height: 40px;
+	}
+
+	.jq-selectbox__trigger-arrow {
+		border-top: 5px solid #444;
+		top: 16px;
+		right: 20px;
+	}
+
+	.jq-selectbox__trigger {
+		border-left: none;
+	}
+}
+
+.withdrawals__content-items {
+	padding-bottom: 35px;
+}
+
+.withdrawals__content-item {
+	display: flex;
+	align-items: center;
+	height: 42px;
+	font-size: 13px;
+	color: #444;
+
+	&:nth-child(odd) {
+		background-color: #f9f9f9;
+	}
+}
+
+.withdrawals__content-date {
+	font-weight: 500;
+	width: 154px;
+	padding-left: 20px;
+}
+
+.withdrawals__content-email {
+	width: 180px;
+}
+
+.withdrawals__content-price {
+	width: 70px;
+	font-weight: 700;
+}
+
+.withdrawals__content-status {
+	width: 88px;
+	font-weight: 700;
+
+	&.withdrawals__content-paid {
+		color: $green;
+	}
+}
 
 @import "media";
