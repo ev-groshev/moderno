@@ -13,6 +13,8 @@ html {
 html,
 body {
 	height: 100%;
+	position: relative;
+	overflow-x: hidden;
 }
 
 .wrapper {
@@ -34,7 +36,8 @@ body {
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 24px;
-	overflow-x: hidden;
+	background-color: #f4f6f5;
+
 }
 
 a {
@@ -90,6 +93,8 @@ li {
 .breadcrumbs {
 	&__inner {
 		padding: 45px 0 40px;
+		overflow: hidden;
+		width: 1200px;
 	}
 
 	&__list {
@@ -140,4 +145,8 @@ li {
 		font-family: "icomoon";
 		font-size: 14px;
 	}
+}
+
+#modal {
+	display: none;
 }
