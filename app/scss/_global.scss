@@ -1,0 +1,152 @@
+/* глобальные настройки */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+
+html,
+body {
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 24px;
+	background-color: #f4f6f5;
+
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: $text;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-fluid {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.page-content {
+	background-color: $grey;
+}
+
+@media (max-width: 760px) {
+	.container-fluid {
+		padding: 0 15px;
+	}
+}
+
+.title {
+	margin-bottom: 30px;
+	color: $bg;
+	font-weight: 700;
+	text-align: center;
+	font-size: 36px;
+	line-height: 60px;
+}
+
+.rate-star {
+	display: inline-block;
+	margin-right: 13px;
+}
+
+//хлебные крошки
+.breadcrumbs {
+	&__inner {
+		padding: 45px 0 40px;
+		overflow: hidden;
+		width: 1200px;
+	}
+
+	&__list {
+		li {
+			display: inline-block;
+			position: relative;
+
+
+			&+li {
+				margin-left: 24px;
+
+				&::after {
+					position: absolute;
+					left: -15px;
+					content: "-";
+					color: $green;
+
+				}
+			}
+
+			a {
+
+				color: #b0bec5;
+			}
+
+			&:last-child {
+
+				a,
+				span {
+					color: $bg;
+				}
+			}
+		}
+	}
+}
+
+//---------------------
+
+.angle-right {
+	position: relative;
+	padding-left: 15px;
+
+	&::before {
+		position: absolute;
+		content: "\f105";
+		left: 0;
+		color: $green;
+		font-family: "icomoon";
+		font-size: 14px;
+	}
+}
+
+#modal {
+	display: none;
+}
